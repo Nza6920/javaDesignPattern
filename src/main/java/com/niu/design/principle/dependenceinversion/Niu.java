@@ -12,11 +12,17 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class Niu {
 
-    public void studyJavaCourse() {
-        log.info("niu 在学习java课程");
+    private ICourse course;
+
+    public Niu(ICourse course) {
+        this.course = course;
     }
 
-    public void studyFeCourse() {
-        log.info("niu 在学习前端课程");
+    public void studyImmocCourse() {
+        this.course.studyCourse();
+    }
+
+    public void setCourse(ICourse course) {
+        this.course = course;
     }
 }
