@@ -5,8 +5,8 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * 依赖倒置原则
  *
- * @version 1.0 [2020/07/15 15:47]
  * @author [nza]
+ * @version 1.0 [2020/07/15 15:47]
  * @createTime [2020/07/15 15:47]
  */
 @Slf4j
