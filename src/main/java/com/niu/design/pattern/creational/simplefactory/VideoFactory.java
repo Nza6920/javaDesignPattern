@@ -1,0 +1,33 @@
+package com.niu.design.pattern.creational.simplefactory;
+
+/**
+ * 简单工厂
+ *
+ * @author [nza]
+ * @version 1.0 [2020/10/27 14:54]
+ * @createTime [2020/10/27 14:54]
+ */
+public class VideoFactory {
+//    public Video getVideo(String type) {
+//        if ("java".equalsIgnoreCase(type)) {
+//            return new JavaVideo();
+//        } else if ("python".equalsIgnoreCase(type)) {
+//            return new PythonVideo();
+//        }
+//        return null;
+//    }
+
+    public Video getVideo(Class c) {
+        Video video = null;
+        try {
+            video = (Video) Class.forName(c.getName()).newInstance();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return video;
+    }
+}

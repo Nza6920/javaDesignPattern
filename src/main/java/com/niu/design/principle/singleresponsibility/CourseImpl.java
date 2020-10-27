@@ -3,8 +3,8 @@ package com.niu.design.principle.singleresponsibility;
 /**
  * 单一职责 - 课程实现类
  *
- * @version 1.0 [2020/07/17 14:00]
  * @author [nza]
+ * @version 1.0 [2020/07/17 14:00]
  * @createTime [2020/07/17 14:00]
  */
 public class CourseImpl implements ICourseManager, ICourseContent {
