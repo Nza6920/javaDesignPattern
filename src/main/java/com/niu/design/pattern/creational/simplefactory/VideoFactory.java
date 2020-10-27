@@ -8,14 +8,14 @@ package com.niu.design.pattern.creational.simplefactory;
  * @createTime [2020/10/27 14:54]
  */
 public class VideoFactory {
-//    public Video getVideo(String type) {
-//        if ("java".equalsIgnoreCase(type)) {
-//            return new JavaVideo();
-//        } else if ("python".equalsIgnoreCase(type)) {
-//            return new PythonVideo();
-//        }
-//        return null;
-//    }
+    public Video getVideo(String type) {
+        if ("java".equalsIgnoreCase(type)) {
+            return new JavaVideo();
+        } else if ("python".equalsIgnoreCase(type)) {
+            return new PythonVideo();
+        }
+        return null;
+    }
 
     public Video getVideo(Class c) {
         Video video = null;

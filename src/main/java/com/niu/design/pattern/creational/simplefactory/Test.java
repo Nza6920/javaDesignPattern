@@ -1,7 +1,7 @@
 package com.niu.design.pattern.creational.simplefactory;
 
 /**
- * 测试类
+ * 简单工厂
  *
  * @author [nza]
  * @version 1.0 [2020/10/27 14:52]
