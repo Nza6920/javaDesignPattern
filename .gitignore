@@ -26,4 +26,4 @@ Build/
 */Binaries/
 Binaries/
 
-*.properties
+src/test/
