@@ -10,7 +10,7 @@ package com.niu.design.pattern.creational.singleton;
 public class StaticInnerClassSingleton {
 
     private StaticInnerClassSingleton() {
-        if (InnerClass.singleton != null) {
+        if (InnerClass.SINGLETON != null) {
             throw new RuntimeException("单例构造器禁止反射调用");
         }
     }
@@ -19,10 +19,10 @@ public class StaticInnerClassSingleton {
      * 利用静态内部类的初始化锁, 来实现单例
      */
     private static class InnerClass {
-        private static StaticInnerClassSingleton singleton = new StaticInnerClassSingleton();
+        private static final StaticInnerClassSingleton SINGLETON = new StaticInnerClassSingleton();
     }
 
     public static StaticInnerClassSingleton getInstance() {
-        return InnerClass.singleton;
+        return InnerClass.SINGLETON;
     }
 }

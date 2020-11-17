@@ -1,6 +1,6 @@
 package com.niu.design.pattern.creational.singleton;
 
-import java.io.*;
+import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
@@ -19,7 +19,7 @@ public class Test {
 
 //        Thread t1 = new Thread(new T());
 //        Thread t2 = new Thread(new T());
-//
+
 //        t1.start();
 //        t2.start();
 
@@ -67,7 +67,7 @@ public class Test {
 //        flag.set(lazySingletonInstance1, true);
 //
 //        LazySingleton lazySingletonInstance2 = constructor.newInstance();
-//
+
         System.out.println(singleton1.getData() == singleton2.getData());
     }
 }
