@@ -1,7 +1,7 @@
 package com.niu.design.pattern.structural.decorator.v2;
 
 /**
- * 建造者模式
+ * 装饰者模式
  * 测试类
  *
  * @author [nza]
