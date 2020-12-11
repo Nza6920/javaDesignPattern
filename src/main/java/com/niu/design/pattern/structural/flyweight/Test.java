@@ -1,10 +1,10 @@
 package com.niu.design.pattern.structural.flyweight;
 
 /**
- * <功能简述>
+ * 享元模式
  *
- * @version 1.0 [2020/12/02 13:35]
  * @author [nza]
+ * @version 1.0 [2020/12/02 13:35]
  * @createTime [2020/12/02 13:35]
  */
 public class Test {
