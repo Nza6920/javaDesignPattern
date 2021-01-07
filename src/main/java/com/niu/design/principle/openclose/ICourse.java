@@ -9,30 +9,31 @@ package com.niu.design.principle.openclose;
  * @createTime [2020/07/15 14:54]
  */
 public interface ICourse {
+
     /**
      * 获取id
      *
+     * @return java.lang.Double
      * @author nza
      * @createTime 2020/7/15 15:11
-     * @return java.lang.Double
      */
     Integer getId();
 
     /**
      * 获取名称
      *
+     * @return java.lang.Double
      * @author nza
      * @createTime 2020/7/15 15:11
-     * @return java.lang.Double
      */
     String getName();
 
     /**
      * 获取价格
      *
+     * @return java.lang.Double
      * @author nza
      * @createTime 2020/7/15 15:11
-     * @return java.lang.Double
      */
     Double getPrice();
 }
